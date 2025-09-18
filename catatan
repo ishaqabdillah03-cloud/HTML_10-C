@@ -1,0 +1,18 @@
+    <style>
+        body { 
+            background-color: #f0f8ff; 
+            font-family: Arial; 
+            margin: 0; /* hilangkan margin bawaan body */
+        }
+        h1 { 
+            color: darkblue; 
+            text-align: center; 
+            margin-top: 0; /* supaya menempel dengan atas */
+            padding: 10px; /* kasih sedikit ruang biar tidak terlalu mepet */
+            background-color: burlywood;
+        }
+        p { 
+            color: #333; 
+            text-align: center;
+        }
+    </style>
