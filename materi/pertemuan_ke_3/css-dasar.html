@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar css Internal</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS Internal</title>
     <style>
-        /* ID ditandai dengan simbol # (pagar) */
-        /* CLASS = ditandai dengan simbol . (titik) */
-        #page-title {
-            color: gold
-        }
-        #box-1 {
-            background-color: rgb(252, 109, 7);
-        }
-        .box-title {
-            color: white; 
-            font-size: 24px;
-        }
-        .box-texs {
-            color: gold;
-            font-size: 14px;
-        }
-        #box-3 {
-            background-color: crimson;
-        }
+      /* ID = di tandain dengan simbol # (pagar) */
+      /* CLASS = di tandain dengan simbol . (titik) */
+      #page-title {
+        color: gold;
+      }
+      #box1 {
+        background-color: chocolate;
+      }
+      .box-title {
+        color: white;
+        font-size: 24px;
+      }
+      .box-text {
+        color: gold;
+        font-size: 14px;
+      }
+      #box3 {
+        background-color: crimson;
+      }
+      #box2 {
+        background-color: blueviolet;
+        width: 300px;
+        height: 300px;
+        margin: 40px;
+        padding: 20px;
+        border: 8px solid red;
+      }
+      #box2 h2 {
+        text-align: center;
+        font-size: 38px;
+      }
+      #box2 p {
+        color: white;
+      }
+      #box2 p b {
+        font-size: 28px;
+      }
+      #box2 .alt-text {
+        color: red;
+        font-size: 20px;
+      }
     </style>
-</head>
-<body>
-    <h1 id="page-title">Belajar Css Internal
+  </head>
+  <body>
+    <h1 id="page-title">Belajar CSS Internal</h1>
     <hr />
-    <!-- box ke 1 -->
+    <!-- box ke-1 -->
     <div id="box1">
-    <h2 class="box-title">Artikel Baru</h2>
-    <p class="box-texs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Perspiciatis impedit totam asperiores. Deserunt eligendi dolorum nesciunt, 
-        nam dolor commodi adipisci quia sit beatae at, ducimus, cum dolores placeat ex error?
-    </p> 
+      <h2 class="box-title">Artikel Baru</h2>
+      <p class="box-text">ini artikel baru bla bla bla....</p>
     </div>
-    <!-- box ke 2 -->
-    <div>
-        <h2>Artikel Lama</h2>
-        <p>ini artikel lama bang, biloh di<b>baca</b> boleh kagak...</p>
-        <p>ini haruse terikut juga jadi teks putih</p>
+    <!-- box ke-2 -->
+    <div id="box2">
+      <h2>Artikel Lama</h2>
+      <p>
+        ini artikel lama bang, boleh di
+        <b>baca</b> boleh kagak....
+      </p>
+      <p>ini haruse terikut juga jadi putih teksnya...</p>
+      <!-- color gold di .box-text ini akan kalah karna tertimpa dengan #box2 p yg sudah mengeset warna white -->
+      <p class="box-text">ini artikel kedua dgn class box-text...</p>
+      <p class="alt-text">Ini alternative text cuman ada di id box2 saja...</p>
     </div>
-    <!-- box ke 3 -->
+    <!-- box ke-3 -->
     <div id="box3">
-        <h2>Artike Ke-3</h2>
-        <p>ini artikel ke-3</p>
+      <h2 class="box-title">Artikel Ke-3</h2>
+      <p class="box-text">ini artikel ke-3 bang isinya bla bla bla....</p>
+      <p class="alt-text">cobain akses class alt-text di box3, ngefek nggak?</p>
     </div>
-</body>
+  </body>
 </html>

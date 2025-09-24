@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 MEMBUAT TABLE</title>
+  </head>
+  <body>
+    <h1>HTML 5 MEMBUAT TABLE</h1>
+    <hr />
+    <h3>Table Dasar</h3>
+    <!-- <tr> : untuk membuat baris -->
+    <!-- <td> : untuk membuat data/kolom-->
+    <table border="1" style="width: 60%">
+      <tr>
+        <td>No</td>
+        <td>Nama</td>
+        <td>Asal</td>
+      </tr>
+      <!-- shortcut:tr>t*d3-->
+      <tr>
+        <td>1</td>
+        <td>kholid</td>
+        <td>Sukabumi</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>yunus</td>
+        <td>medan, sumut</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>faris</td>
+        <td>bekasi, jabar</td>
+      </tr>
+    </table>
+
+    <h3>Table Standar HTML 5</h3>
+    <!-- shortcut: table>head+body+-->
+    <!-- <tr> : untuk membuat baris -->
+    <!-- <th> : untuk membuat data/kolom di head -->
+    <table border="1" style="width: 80%">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tanggal</th>
+          <th>Nama Barang</th>
+          <th>Harga Barang</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>21/09/2025</td>
+          <td>sabun mandi</td>
+          <td>15,000,00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>22/09/2025</td>
+          <td>naspad kawan lamo</td>
+          <td>10,000,00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>23/09/2025</td>
+          <td>naspad kawan lamo</td>
+          <td>10,000,00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>24/09/2025</td>
+          <td>Roti Gembul</td>
+          <td>25,000,00</td>
+        </tr>
+        <tfoot>
+            <td colspan="3"><b>Total Pengeluaran</b></td>
+            <td><b>60,000,00</b></td>
+        </tfoot>
+      </tbody>
+    </table>
+  </body>
+</html>
