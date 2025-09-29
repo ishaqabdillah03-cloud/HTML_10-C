@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" <html data-theme="light">
+  >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 FORM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <!-- tag main = div tapi lebih utama -->
+    <main class="container">
+      <h1>HTML 5 form tutorial</h1>
+      <hr />
+
+      <form>
+        <!-- tip shortcut: input:[input type-nya] -->
+        <div>
+          <label for="inputName">Nama Lengkap</label>
+          <input type="text" name="nama_lengkap" id="inputName"
+        </div>
+        <div>
+          <label for="inputAge">Umur</label>
+          <input type="text" name="umur" id="inputAge"
+        </div>
+        <div>
+          <label for="inputDate">Tanggal Lahir</label>
+          <input type="date" name="tanggal_lahir" id="inputDate"
+        </div>
+        <div>
+          <label for="inputKota">Asal Kota</label>
+          <select name="asal_kota" id="inputKota">
+            <option value="JKT">Jakarta</option>
+            <option value="MGL">Magelang</option>
+            <option value="PRJ">Purworjo</option>
+            <option value="BKS">Bekasi</option>
+            <option value="BGR">Bogor</option>
+          </select>
+        </div>
+        <div>
+          <label for="inputBio">Biografi</label>
+          <textarea name="Biografi" id="inputBio"></textarea>
+        </div>
+        <div>
+          <label for="inputEmail">Alamat Email</label>
+          <input type="email" name="alamat_email" id="inputAlamat Email"
+        </div>
+        <div>
+          <label for="inputPass">Password</label>
+          <input type="Password" name="password" id="inputPass"
+        </div>
+        <p>Jenis Kelamin :</p>
+        <div class="grid">
+          <input type="radio" name="jenis_kelamin" id="inputLanang" />
+          <label for="inputLanang">Laki-Laki</label>
+          <input type="radio" name="jenis_kelamin" id="inputWedo" />
+          <label for="inputWedo">perempuan</label>
+        </div>
+        <br />
+        <div>
+          <p>Hobi</p>
+          <input type="checkbox" name="hobi" id="inputBaca" />
+          <label for="inputBaca">Membaca</label><br />
+          <input type="checkbox" name="hobi" id="inputRenang" />
+          <label for="inputRenang">Berenang</label><br />
+          <input type="checkbox" name="hobi" id="inputFutsal" />
+          <label for="inputFutsal">Futsal</label><br />
+          <input type="checkbox" name="hobi" id="inputNonton" />
+          <label for="inputNonton">Nonton</label><br />
+          <input type="checkbox" name="hobi" id="inputJoging" />
+          <label for="inputJoging">Joging</label><br />
+        </div>
+        <br />
+        <!-- action buttons -->
+        <div class="grid">
+          <!-- tip shortcut: input:[input type-nya] -->
+          <button type="reset">Batal</button>
+          <button type="submit">Simpan</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
