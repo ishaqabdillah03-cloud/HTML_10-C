@@ -80,6 +80,7 @@ nav a.active {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
+  padding-left: 20px;
   padding: 15px;
   margin: 20px auto;
   width: 90%;
@@ -162,4 +163,34 @@ button[type="reset"] {
 button[type="submit"] {
   background: #1e3a8a;
   color: #fff;
+}
+.box ul,
+.box ol {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* === Galeri === */
+.galery {
+  display: inline-flex;
+  gap: 15px; /* jarak antar gambar */
+  flex-wrap: wrap; /* biar responsif kalau layar kecil */
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 200px; /* minimal lebar 200px, bisa melar */
+  max-width: 220px; /* batas maksimal */
+}
+
+.galery img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover; /* gambar dipotong biar rapi */
+  margin-bottom: 8px;
 }
