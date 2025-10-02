@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulir Umpan Balik</h1>
+      <h4>Kritik, Saran, dan Masukan</h4>
+    </header>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+
+    <form action="https://httpbin.org/post" method="post">
+      <h3 class="section-title">Formulir Kontak & Saran</h3>
+
+      <label for="nama">Nama Anda (Opsional):</label>
+      <input type="text" id="nama" name="nama" />
+
+      <label for="email">Email Anda:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="rating">Rating Kepuasan Website (Skala 1–10):</label>
+      <input type="number" id="rating" name="rating" min="1" max="10" />
+
+      <label>Rekomendasi Website Ini?</label>
+      <input type="radio" name="rekom" value="ya" /> Ya, Sangat
+      <input type="radio" name="rekom" value="mungkin" /> Mungkin Saja
+      <input type="radio" name="rekom" value="tidak" /> Tidak
+
+      <label>Topik yang paling menarik:</label>
+      <input type="checkbox" name="topik" value="biodata" /> Biodata
+      <input type="checkbox" name="topik" value="jadwal" /> Jadwal
+      <input type="checkbox" name="topik" value="galeri" /> Galeri
+
+      <label for="bidang">Saran Pengembangan di Bidang:</label>
+      <select id="bidang" name="bidang">
+        <option>-- Pilih Bidang --</option>
+        <option>Desain</option>
+        <option>Konten</option>
+        <option>Teknologi</option>
+      </select>
+
+      <label for="pesan">Pesan/Saran Lengkap:</label>
+      <textarea id="pesan" name="pesan" rows="5"></textarea>
+
+      <button type="reset">Atur Ulang</button>
+      <button type="submit">Kirim Feedback</button>
+    </form>
+  </body>
+</html>

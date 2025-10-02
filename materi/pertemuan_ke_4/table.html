@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML 5 MEMBUAT TABLE</title>
+    <style>
+      #table-basic {
+        width: 60%;
+        border-collapse: collapse;
+      }
+      #table-basic td {
+        padding: 6px;
+        font-size: 16px;
+      }
+      #table-basic .bg-blue {
+        background-color: darkblue;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <h1>HTML 5 MEMBUAT TABLE</h1>
@@ -11,8 +25,8 @@
     <h3>Table Dasar</h3>
     <!-- <tr> : untuk membuat baris -->
     <!-- <td> : untuk membuat data/kolom-->
-    <table border="1" style="width: 60%">
-      <tr>
+    <table border="1" id="table-basic">
+      <tr class="bg-blue">
         <td>No</td>
         <td>Nama</td>
         <td>Asal</td>
@@ -58,13 +72,13 @@
         <tr>
           <td>2</td>
           <td>22/09/2025</td>
-          <td>naspad kawan lamo</td>
+          <td rowspan="2">naspad kawan lamo</td>
           <td>10,000,00</td>
         </tr>
         <tr>
           <td>3</td>
           <td>23/09/2025</td>
-          <td>naspad kawan lamo</td>
+          <!-- <td>naspad kawan lamo</td> -->
           <td>10,000,00</td>
         </tr>
         <tr>

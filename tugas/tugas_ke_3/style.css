@@ -1,0 +1,165 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Header & Judul */
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #1e3a8a;
+  font-size: 28px;
+}
+
+h2 {
+  color: #1e3a8a;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+h3.section-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 4px solid #fdd51f;
+  color: #1e40af;
+}
+
+h4 {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* Navigasi */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1e3a8a;
+  border-radius: 20px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #e0e7ff;
+}
+
+nav a.active {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+/* Box konten */
+.box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Avatar / Foto */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+}
+
+/* Tabel */
+table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+/* Form */
+form {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button[type="reset"] {
+  background: #6b7280;
+  color: #fff;
+}
+
+button[type="submit"] {
+  background: #1e3a8a;
+  color: #fff;
+}
