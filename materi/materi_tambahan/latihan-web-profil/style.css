@@ -1,0 +1,118 @@
+/* Reset sederhana */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Warna latar untuk memvisualisasikan blok */
+header,
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav,
+.nav {
+  margin-top: 10px;
+  background: #45a049;
+  padding: 10px;
+}
+
+nav a,
+.nav a {
+  color: green;
+  text-decoration: none; /* hapus garis bawah */
+  border-radius: 22px; /* ubah sudut jadi bulat */
+  background: #fff;
+  padding: 6px 14px;
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding-left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px; /* jarak luar antar link */
+}
+.nav a.active {
+  background: green;
+  color: white;
+}
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Article khusus */
+article,
+.article {
+  background: #bbdefb;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Sidebar / aside */
+aside,
+.aside {
+  flex: 1;
+  background: #ffe082;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer,
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h2 {
+  color: rgb(221, 19, 19);
+}
+
+.gallery p {
+  color: rgb(199, 199, 184);
+}
+
+.gallery .Card {
+  display: inline-block;
+  width: 200px;
+  margin: 14px;
+  overflow: hidden;
+  border: 1px solid darkgoldenrod;
+  border-radius: 10px;
+}
+
+.gallery .Card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.gallery .Card figcaption {
+  background-color: #333;
+  color: aqua;
+  padding: 40px;
+  font-size: medium;
+  margin-top: -8px;
+}

@@ -83,7 +83,7 @@ nav a.active {
   padding-left: 20px;
   padding: 15px;
   margin: 20px auto;
-  width: 90%;
+  width: 500%;
   max-width: 800px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -172,25 +172,34 @@ button[type="submit"] {
 }
 
 /* === Galeri === */
-.galery {
-  display: inline-flex;
-  gap: 15px; /* jarak antar gambar */
-  flex-wrap: wrap; /* biar responsif kalau layar kecil */
+.gallery h2 {
+  color: rgb(221, 19, 19);
 }
 
-.gallery-item {
-  background: #fff;
+.gallery .Card {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  color: #333;
+  overflow: hidden;
+  border: 1px solid darkgoldenrod;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  text-align: center;
-  flex: 1 1 200px; /* minimal lebar 200px, bisa melar */
-  max-width: 220px; /* batas maksimal */
 }
 
-.galery img {
-  width: 300px;
-  height: 250px;
-  object-fit: cover; /* gambar dipotong biar rapi */
-  margin-bottom: 8px;
+.gallery .Card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.gallery .Card figcaption {
+  background-color: #333;
+  color: aqua;
+  padding: 40px;
+  font-size: medium;
+  margin-top: -8px;
+}
+
+.gallery p {
+  text-align: center;
 }
