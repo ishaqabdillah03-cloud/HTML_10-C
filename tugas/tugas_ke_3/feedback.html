@@ -8,7 +8,6 @@
   <body>
     <header>
       <h1>Formulir Umpan Balik</h1>
-      <h4>Kritik, Saran, dan Masukan</h4>
     </header>
 
     <nav>
@@ -19,38 +18,49 @@
       <a href="feedback.html" class="active">Feedback</a>
     </nav>
 
-    <form action="https://httpbin.org/post" method="post">
+    <form>
       <h3 class="section-title">Formulir Kontak & Saran</h3>
+      <p>Monggo silahken diisi sekarepe</p>
 
-      <label for="nama">Nama Anda (Opsional):</label>
-      <input type="text" id="nama" name="nama" />
+      <div>
+        <label for="inputName">Nama Lengkap</label>
+        <input type="text" name="nama_lengkap" id="inputName" />
+      </div>
 
-      <label for="email">Email Anda:</label>
-      <input type="email" id="email" name="email" required />
+      <div>
+        <label for="inputEmail">Alamat Email</label>
+        <input type="email" name="alamat_email" id="inputAlamat Email"
+      </div>
 
       <label for="rating">Rating Kepuasan Website (Skala 1–10):</label>
       <input type="number" id="rating" name="rating" min="1" max="10" />
 
       <label>Rekomendasi Website Ini?</label>
-      <input type="radio" name="rekom" value="ya" /> Ya, Sangat
-      <input type="radio" name="rekom" value="mungkin" /> Mungkin Saja
-      <input type="radio" name="rekom" value="tidak" /> Tidak
+      <div>
+        <input type="radio" name="rekom" value="Sangat bagus" /> Sangat bagus
+        <input type="radio" name="rekom" value="Bagus" /> Bagus
+        <input type="radio" name="rekom" value="lumayan bagus" /> lumayan bagus
+        <input type="radio" name="rekom" value="Cukup bagus" /> Cukup bagus
+      </div>
 
-      <label>Topik yang paling menarik:</label>
+      <label>Topik yang menarik bagimu:</label>
       <input type="checkbox" name="topik" value="biodata" /> Biodata
       <input type="checkbox" name="topik" value="jadwal" /> Jadwal
       <input type="checkbox" name="topik" value="galeri" /> Galeri
 
-      <label for="bidang">Saran Pengembangan di Bidang:</label>
-      <select id="bidang" name="bidang">
-        <option>-- Pilih Bidang --</option>
-        <option>Desain</option>
-        <option>Konten</option>
-        <option>Teknologi</option>
-      </select>
+      <div>
+        <label for="bidang">Saran Pengembangan di Bidang:</label>
+        <select name="bidang" id="bidang">
+          <option>-- Pilih Bidang --</option>
+          <option value="CSS">CSS</option>
+          <option value="DSN">Desain (Website)</option>
+        </select>
+      </div>
 
-      <label for="pesan">Pesan/Saran Lengkap:</label>
-      <textarea id="pesan" name="pesan" rows="5"></textarea>
+      <div>
+        <label for="pesan">Pesan/Saran Lengkap:</label>
+        <textarea name="pesan" id="pesan"></textarea>
+      </div>
 
       <button type="reset">Atur Ulang</button>
       <button type="submit">Kirim Feedback</button>

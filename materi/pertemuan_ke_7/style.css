@@ -1,0 +1,67 @@
+.card {
+  background: #f9f9ff;
+  text-align: center;
+  height: 350px;
+  width: 350px;
+  /* line-height: 12; */
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+
+#BoxA {
+  width: 200px;
+  height: 200px;
+  background: yellowgreen;
+}
+
+#BoxB {
+  width: 200px;
+  height: 200px;
+  background: orangered;
+  padding: 10px;
+}
+
+#BoxC {
+  width: 200px;
+  height: 200px;
+  background: #a863ec;
+  padding: 10px;
+  border: 5px solid #333;
+}
+
+#BoxD {
+  width: 200px;
+  height: 200px;
+  background: aquamarine;
+  padding: 10px;
+  border: 5px solid #333;
+  margin: 30px;
+}
+
+/* Bagian 2 Positon */
+#BoxE{
+    width: 200px;
+    height: 200px;
+    background: ;
+    position:;
+
+
+}
+
+#BoxG{
+    width: 200px;
+    height: 200px;
+    background: ;
+    position:;
+
+
+}
+
+#BoxH{
+    width: 200px;
+    height: 200px;
+    background: ;
+    position:;
+
+
+}

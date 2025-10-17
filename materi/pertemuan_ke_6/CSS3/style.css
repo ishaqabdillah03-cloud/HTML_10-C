@@ -1,0 +1,38 @@
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+h1 {
+  color: deeppink;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+.paragraph {
+  width: 40%;
+  background-color: goldenrod;
+}
+
+@font-face {
+  font-family: "fontsaya";
+  src: url(Wonderian.otf) format(true type);
+}
+
+.paragraph {
+  text-align: center;
+  text-transform: capitalize;
+  /* # jarak antar baris */
+  line-height: 1, 5;
+  /* # jarak antara huruf */
+  letter-spacing: 2px;
+}
