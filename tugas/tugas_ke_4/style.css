@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+
 @font-face {
   font-family: BismillahScript;
   src: url(../tugas_ke_4/fons/Bismillah\ Script.ttf);
 }
+
 header {
   text-align: center;
   background: greenyellow;
@@ -10,8 +13,8 @@ header {
   margin: 8px;
   margin-bottom: 15px;
   font-size: medium;
-  font-family: sans-serif;
   text-transform: uppercase;
+  font-family: "Rubik Puddles", cursive;
 }
 
 header p {
@@ -28,11 +31,16 @@ article {
   border-radius: 10px;
 }
 
+p {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 130%;
+  font-size: medium;
+  font-family: cursive;
+}
+
 span {
   color: red;
-  /* background-color: #fff;
-  border-radius: 3px;
-  padding: 3px; */
 }
 
 .catatan {

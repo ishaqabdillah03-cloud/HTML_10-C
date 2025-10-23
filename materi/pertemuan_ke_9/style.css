@@ -1,0 +1,46 @@
+.alert {
+  display: flex;
+  background-color: #dfffff;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 15px;
+}
+
+.alert button {
+  font-size: small;
+  background-color:#ffffff;
+  padding: 2px;
+}
+
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #333;
+  border-radius: 6px;
+}
+
+/* wadah flexbox wajib display nya flex */
+.pricing-area {
+  display: flex;
+  /* flex-direction: untuk mengatur arah items apakah horizontal/vertikal */
+  flex-direction: row;
+  /* gap: jarak antara block */
+  gap: 15px;
+  /* justify-content: unk mengatur tata letak items  */
+  justify-content: center;
+  align-items: center;
+}
+
+.pro-blue {
+  border: 2px solid blue;
+  width: 220px;
+  height: 220px;
+
+}
