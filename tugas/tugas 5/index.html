@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- tagmeta view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Latihan Tugas Flexbox</h1>
+      </header>
+
+      <div class="tugas-1">
+        <h2>1️⃣: Alert Info</h2>
+        <div class="alert">
+          <p>ℹ️ info; mandilah 2/3kali sehari agar badanmu tidak bau tegik</p>
+          <button
+            type="button"
+            onclick="this.parentElement.style.display='none'"
+          >
+            ✖️
+          </button>
+        </div>
+      </div>
+
+      <div class="profil-card">
+        <h2>2️⃣: Profil Card</h2>
+        <div class="info-profil">
+          <img
+            src="../tugas 5/imeges/zeelool-glasses-trsE5rHBjvs-unsplash.jpg"
+            alt="foto org kerja"
+          />
+          <span>Active</span>
+          <h3>Eko Setiawan</h3>
+          <p>Fonttend Developer</p>
+        </div>
+      </div>
+
+      <!-- wadah/parent felxbox -->
+
+      <div class="pricing-area">
+        <h2 class="pricing-header">3️⃣: Pricing Card</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Basic</h3>
+            <br />
+            <p class="harga">Rp50.000</p>
+            <ul>
+              <li>1 Project</li>
+              <li>Community Support</li>
+            </ul>
+            <button>Pilih Paket</button>
+          </div>
+
+          <div class="card pro-blue">
+            <h3>Pro</h3>
+            <br />
+            <p class="harga">Rp150.000</p>
+            <ul>
+              <li>5 Projects</li>
+              <li>Priority Support</li>
+            </ul>
+            <button>Pilih Paket</button>
+          </div>
+
+          <div class="card">
+            <h3>Enterprise</h3>
+            <br />
+            <p class="harga">Rp300.000</p>
+            <ul>
+              <li>Unlimited Projects</li>
+              <li>Dedicated Support</li>
+            </ul>
+            <button>Pilih Paket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

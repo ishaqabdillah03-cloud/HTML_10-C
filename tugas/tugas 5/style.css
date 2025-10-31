@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+  margin-top: 0%;
+  font-family: sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid oldlace;
+  background: white;
+}
+
+body {
+  background: #dddddd;
+}
+
+h2,
+h3 {
+  font-family: sans-serif;
+}
+
+/* TUGAS 1️⃣ */
+.tugas-1 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid oldlace;
+  background: white;
+}
+
+.alert {
+  display: flex;
+  background-color: #dfffff;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 15px;
+}
+
+.alert button {
+  font-size: small;
+  padding: 1px;
+}
+
+/* TUGAS 2️⃣ */
+.profil-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid oldlace;
+  background: white;
+}
+
+.info-profil {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #f9f9f9;
+  margin: 15px;
+  margin-left: 0%;
+  padding: 15px;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.102);
+  transform: scale(1.05);
+}
+
+span {
+  font-family: sans-serif;
+  color: #ffffff;
+  background: #00ff00;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 3px;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* TUGAS 3️⃣ */
+
+/* wadah flexbox wajib display nya flex  */
+.pricing-area {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: unk mengatur tata letak items  */
+  justify-content: center;
+  /* gap: jarak antara block */
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid oldlace;
+  background: white;
+}
+
+.cards {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  flex: 1;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card button {
+  background-color: #5555ff;
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.card li {
+  list-style: none;
+}
+
+.pro-blue {
+  border: 2px solid blue;
+  width: 220px;
+  height: 220px;
+}
+
+.harga {
+  color: blue;
+}
